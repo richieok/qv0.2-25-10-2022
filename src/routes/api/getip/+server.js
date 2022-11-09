@@ -6,7 +6,7 @@ export async function GET({request}){
     try {
         result = {
             address: request.headers.get('host'),
-            'x-forwarded-for': request.headers.get('x-forwarded-for')
+            'x-real-ip': request.headers.get('x-real-ip')
         }
 
     }
